@@ -1,0 +1,79 @@
+<html>
+    <body>
+        <a href="">Split Horizon Hack: Essentially packet flooding?</a>
+        <table border="1">
+            <tr>
+                <th>Ethernet</th>
+                <th>Token Ring</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Designed for high traffic</td>
+            </tr>
+            <tr>
+                <td>CSMA & CSMA/CD</td>
+                <td>Uses 3-byte token, passed around 'ring' of connected devices</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Forward all traffic it receives to next member in ring until it gets token. Maximum bound is set on wait time.</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <tr>
+                <th>CSMA/CA</th>
+                <th>CSMA/CD</th>
+            </tr>
+            <tr>
+                <td>Waits for medium to not be in use before transmitting</td>
+                <td>detects collisions</td>
+            </tr>
+            <tr>
+                <td>more common in wireless networks. Wireless cant detect collision so it must use CA to avoid them.</td>
+                <td>used to be more common in wired networks</td>
+            </tr>
+        </table>
+
+        <p>EGP routes between sets of Autonomous Systems (AS). (BGP is a form of EGP). The "glue" of the internet</p>
+        <p>BGP directs traffic between Autonomous Systems. Sends updated router table information only when something changes. <a href="://cdn.ttgtmedia.com/digitalguide/images/Misc/intro_bgp_2.gif">Diagram</a></p>
+
+        <h3>Split Horizon and Poison Reverse (Used for Distance Vector Protocols)</h3>
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <h3>Transport Layer</h3>
+        <ul>
+            <li>multiplexing and demultiplexing</li>
+            <li>UDP & TCP</li>
+            <li>Stop&Wait, Go-Back-N, selective repeat</li>
+        </ul>
+        
+        <h3>Network Layer</h3>
+        <ul>
+            <li>End to end data delivery: addressing, routing, forwarding</li>
+            <li>IP Addresses</li>
+        </ul>
+
+        <h3>Data Link Layer</h3>
+        <ul>
+            <li>802.11b Wireless LAN (receiver ACK needed because of hidden terminal problem: A transmitter cant tell who else is transmitting so it must use Collision Avoidance.)</li>
+            <li>802.11b Wireless LAN tends not to use CA if sending a very small amount of data</li>
+            <ul>
+                <li><a href="https://www.quora.com/What-do-we-mean-by-the-Hidden-Terminal-and-Exposed-Terminal-problems">More on hidden/exposed terminal: Request to send (RTS) & Clear to send (CTS)</a></li>
+            </ul>
+            <li>PPP: point to point link layer protocol</li>
+            <li>repeaters, switches, routers</li>
+        </ul>
+
+        <h3>Solutions</h3>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1vMkWmz11KKtDKXN3oPHAWCaCYeDgH-mB/view?usp=sharing">Quiz I Solutions</a></li>
+            <li><a href="https://drive.google.com/file/d/1GSb8iYanvEKPjJ4oR3j7YvnnFAAP1SoE/view?usp=sharing">Quiz II Solutions</a></li>
+            <li><a href="https://drive.google.com/file/d/1nLdkuilmDlbjkbZloFNJDztSdzFLnVO1/view?usp=sharing">Homework 1 Solutions</a></li>
+            <li><a href="https://drive.google.com/open?id=1ZP5YIhAn6N-133HVDKNj6owVFxIImV7c">Homework 2 Solutions</a></li>
+        </ul>
+    </body>
+</html>
