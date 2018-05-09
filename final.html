@@ -3,7 +3,7 @@
         <p><a href="">Split Horizon Hack: Essentially packet flooding? Propogates link failures to other connected routers</a></p>
         <p><a href="http://www.just2good.co.uk/images/gif/ethernetFrame.gif">Ethernet Frame Diagram</a></p>
         <p><a href="https://www.slideshare.net/tigerbt/arp-address-resolution-protocol">Address Resolution Protocol (ARP)</a></p>
-        <p><a href="">Internet Control Message Protocol (ICMP)</a></p>
+        <p><a href="">Internet Control Message Protocol (ICMP): Handles packet errors</a></p>
 
         <h3>LAN Protocols</h3>
         <table border="1">
@@ -74,7 +74,8 @@
             </tr>
             <tr>
                 <td>Network Layer</td>
-                <td>Protocols like IP, ICMP</td>
+                <td>Protocols like IP, ICMP
+                    </td>
             </tr>
             <tr>
                 <td>Data Link Layer</td>
@@ -97,7 +98,9 @@
         <ul>
             <li>End to end data delivery: addressing, routing, forwarding</li>
             <li>IP Addresses</li>
-        </ul>
+            <li><b>data plane</b>: forwarding: move packet from router input to correct router output<br/>
+                <b>control plane</b>: routing: determine route packet takes from source to destination<br/>
+                Two approaches to network layer: per-router control (traditional), logically centralized control (Software Defined Networking)</li></ul>
 
         <h3>Data Link Layer</h3>
         <ul>
@@ -106,7 +109,7 @@
             <ul>
                 <li><a href="https://www.quora.com/What-do-we-mean-by-the-Hidden-Terminal-and-Exposed-Terminal-problems">More on hidden/exposed terminal: Request to send (RTS) & Clear to send (CTS)</a></li>
             </ul>
-            <li>PPP: point to point link layer protocol</li>
+            <li>PPP: point to point link layer protocol. Used to establish connection between two nodes</li>
             <li>repeaters, switches, routers</li>
         </ul>
 
