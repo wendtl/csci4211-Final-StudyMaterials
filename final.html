@@ -4,6 +4,8 @@
         <p><a href="http://www.just2good.co.uk/images/gif/ethernetFrame.gif">Ethernet Frame Diagram</a></p>
         <p><a href="https://www.slideshare.net/tigerbt/arp-address-resolution-protocol">Address Resolution Protocol (ARP)</a></p>
         <p><a href="">Internet Control Message Protocol (ICMP): Handles packet errors</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#IPv4_CIDR_blocks">Classless Inter-Domain Routing (CIDR) IPv4 Address Reference</a></p>
+        
 
         <h3>LAN Protocols</h3>
         <table border="1">
@@ -17,7 +19,7 @@
            </tr>
             <tr>
                 <td>CSMA & CSMA/CD</td>
-                <td>Uses 3-byte token, passed around 'ring' of connected devices</td>
+                <td>Uses 3-byte token, token needed to transmit is passed around the 'ring' of connected devices</td>
             </tr>
             <tr>
                 <td></td>
@@ -42,9 +44,10 @@
             </tr>
         </table>
 
-        <p>EGP routes between sets of Autonomous Systems (AS). (BGP is a form of EGP). The "glue" of the internet</p>
+        <p>EGP routes between sets of Autonomous Systems (AS). (BGP is only form form of EGP generally used today). The "glue" of the internet</p>
         <p>BGP directs traffic between Autonomous Systems. Sends updated router table information only when something changes. <a href="://cdn.ttgtmedia.com/digitalguide/images/Misc/intro_bgp_2.gif">Diagram</a></p>
 
+        <b>Distance Vector Algorithm</b>: Bellman-Ford Algorithm (finding shortest path): dx(y) = min {c(x,v) + dv(y) }
         <h3>Split Horizon and Poison Reverse (Used for Distance Vector Protocols)</h3>
         <ul>
             <li></li>
@@ -88,6 +91,8 @@
             </tr>
         </table>
 
+        <h3><a href="http://gaia.cs.umass.edu/kurose_ross/interactive/">Interactive Exercises</a></h3>
+
         <h3>Transport Layer</h3>
         <ul>
             <li>multiplexing and demultiplexing</li>
@@ -118,7 +123,7 @@
 
         <h3>Network Control Plane</h3>
         <ul>
-            <li>intra-domain routing algorithms</li>
+            <li>intra-domain routing algorithms (RIP, EIGRIP, OSPF, IS-IS)</li>
             <li>SDN controllers (OSPF, RIP, OpenFlow, ODL, ONOS)</li>
         </ul>
 
